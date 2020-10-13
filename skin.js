@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Object2VR 3.1.7/10775
 // Filename: Wald Modell Skin.ggsk
-// Generated Di 13. Okt 11:48:43 2020
+// Generated Di 13. Okt 12:40:18 2020
 
 function object2vrSkin(player,base) {
 	var me=this;
