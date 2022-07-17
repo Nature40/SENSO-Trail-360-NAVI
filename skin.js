@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
-// Pano2VR 6.1.13/18080
+// Pano2VR 6.1.15/18116
 // Filename: SENSO-Trail-360-Navi.ggsk
-// Generated 2021-10-20T10:03:44
+// Generated 2022-07-17T11:17:22
 
 function pano2vrSkin(player,base) {
 	player.addVariable('HilfeModus', 2, false);
@@ -13129,14 +13129,6 @@ function pano2vrSkin(player,base) {
 			}
 			me._kartenmenu.style.opacity='0';
 			me._kartenmenu.style.visibility='hidden';
-			if (
-				(
-					((player.getVariableValue('Erinnerung') == false))
-				)
-			) {
-				me._timer_erinnerung0.ggTimeout=Number("10") * 1000.0;
-				me._timer_erinnerung0.ggTimestamp=skin.ggCurrentTime;
-			}
 			me._sensotrail3600.style[domTransition]='none';
 			me._sensotrail3600.style.visibility=(Number(me._sensotrail3600.style.opacity)>0||!me._sensotrail3600.style.opacity)?'inherit':'hidden';
 			me._sensotrail3600.ggVisible=true;
@@ -13363,14 +13355,6 @@ function pano2vrSkin(player,base) {
 			}
 			me._kartenmenu.style.opacity='0';
 			me._kartenmenu.style.visibility='hidden';
-			if (
-				(
-					((player.getVariableValue('Erinnerung') == false))
-				)
-			) {
-				me._timer_erinnerung0.ggTimeout=Number("10") * 1000.0;
-				me._timer_erinnerung0.ggTimestamp=skin.ggCurrentTime;
-			}
 			me._sensotrail3600.style[domTransition]='none';
 			me._sensotrail3600.style.visibility=(Number(me._sensotrail3600.style.opacity)>0||!me._sensotrail3600.style.opacity)?'inherit':'hidden';
 			me._sensotrail3600.ggVisible=true;
@@ -15463,7 +15447,7 @@ function pano2vrSkin(player,base) {
 		el=me._erinnerung2=document.createElement('div');
 		el.ggTimestamp=0;
 		el.ggLastIsActive=false;
-		el.ggTimeout=1000;
+		el.ggTimeout=0;
 		el.ggId="Erinnerung2";
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
 		el.ggVisible=false;
@@ -15871,7 +15855,7 @@ function pano2vrSkin(player,base) {
 		el=me._erinnerung1=document.createElement('div');
 		el.ggTimestamp=0;
 		el.ggLastIsActive=false;
-		el.ggTimeout=1000;
+		el.ggTimeout=0;
 		el.ggId="Erinnerung1";
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
 		el.ggVisible=false;
@@ -16473,7 +16457,7 @@ function pano2vrSkin(player,base) {
 			me._viel_spa.style[domTransition]='none';
 			me._viel_spa.style.visibility='hidden';
 			me._viel_spa.ggVisible=false;
-			me._timer_erinnerung0.ggTimeout=Number("400") * 1000.0;
+			me._timer_erinnerung0.ggTimeout=Number("600") * 1000.0;
 			me._timer_erinnerung0.ggTimestamp=skin.ggCurrentTime;
 		}
 		me._sensotrail360.onmouseover=function (e) {
@@ -16552,7 +16536,7 @@ function pano2vrSkin(player,base) {
 		el=me._timer_start2=document.createElement('div');
 		el.ggTimestamp=0;
 		el.ggLastIsActive=false;
-		el.ggTimeout=100;
+		el.ggTimeout=0;
 		el.ggId="Timer Start2";
 		el.ggDx=0;
 		el.ggDy=0;
